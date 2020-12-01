@@ -34,7 +34,7 @@ def start_game():
         attempt_count += 0
         highscore.append(attempt_count)
         start = input("You got it in {} attempt(s) {}!\nWould you like to try again? (Enter 'y' or 'n'):  ".format(attempt_count,name))
-        if start == "y":
+        if start.lower() == "y":
             print("Awesome! See if you can beat your highscore of {}.".format(min(highscore)))
             start_game()
         elif start != "y":
